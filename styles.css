@@ -11,7 +11,7 @@ box-sizing: border-box;
 
 .top-header { 
     	width: 100%; 
-    	background-image: url("C:\Users\Werner\Desktop\WebPageDesign\Images\SeaHorizon.jpg"); 
+    	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
     	background-size: cover; 
     	background-position: center; 
     } 
