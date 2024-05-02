@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 75px 75px 1fr 50px;
+    grid-template-rows: 75px 65px 1fr 50px;
     grid-template-areas: 
         'header header header header header'
         'nav nav nav nav nav'
@@ -63,9 +63,16 @@ a:hover {
     background-color: MidnightBlue;
     grid-area: main;  
 }
-.itemd {
+.item_side {
     background-color: black;
-    grid-area: sidebar;  
+    grid-area: sidebar;
+    grid-area: nav;  
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid white;
 }
 .iteme {
     background-color: orange;
