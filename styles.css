@@ -7,7 +7,6 @@ tr, ul, video {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-background-color: black;
 }
 
 .top-header { 
@@ -15,7 +14,6 @@ background-color: black;
     	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
     	background-size: cover; 
     	background-position: center; 
-	background-color: black;
     } 
      
 .top-header > h1 { 
@@ -98,7 +96,7 @@ text-align: justify;
 margin-bottom: 0.5em
 }
 a {
-  color: ghostwhite;
+  color: black;
   
 }
 a:hover {
