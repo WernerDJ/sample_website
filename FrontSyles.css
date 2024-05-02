@@ -31,7 +31,7 @@ body {
     grid-area: header;  
 }
 .itemb {
-    background-color: MidnightBlue;
+    background-color: Black;
     grid-area: nav;  
 }
 .itemc {
