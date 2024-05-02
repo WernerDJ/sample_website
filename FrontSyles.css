@@ -46,3 +46,15 @@ body {
     background-color: orange;
     grid-area: footer;  
 }
+.top-header { 
+    	width: 100%; 
+    	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
+    	background-size: cover; 
+    	background-position: center; 
+    } 
+     
+.top-header > h1 { 
+    	color: white; 
+    	padding: 2em 1em; 
+    	font-family: sans-serif;
+    } 
