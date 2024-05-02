@@ -14,6 +14,7 @@ box-sizing: border-box;
     	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
     	background-size: cover; 
     	background-position: center; 
+	background-color: black;
     } 
      
 .top-header > h1 { 
