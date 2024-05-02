@@ -20,7 +20,7 @@ box-sizing: border-box;
     	color: white; 
     	padding: 2em 1em; 
     	font-family: sans-serif;
-	background-color: black;
+	
     } 
 }
 
@@ -97,7 +97,7 @@ text-align: justify;
 margin-bottom: 0.5em
 }
 a {
-  color: black;
+  color: blue;
   
 }
 a:hover {
@@ -152,7 +152,7 @@ nav {
     list-style-type: none;
     text-align: center;
     border-bottom: 1px solid white;
-
+background-color: black;
 }
 
 li {
