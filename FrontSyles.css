@@ -15,7 +15,7 @@ body {
     grid-template-areas: 
         'header header header header header'
         'nav nav nav nav nav'
-        'main   main   main   main   sidebar'
+        'sidebar   main   main   main   main'
         'footer footer footer footer footer';
 }
 .item {
@@ -27,19 +27,19 @@ body {
     text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, 0.2);
 }
 .itema {
-    background-color: tomato;
+    background-color: MidnightBlue;
     grid-area: header;  
 }
 .itemb {
-    background-color: mediumorchid;
+    background-color: MidnightBlue;
     grid-area: nav;  
 }
 .itemc {
-    background-color: royalblue;
+    background-color: MidnightBlue;
     grid-area: main;  
 }
 .itemd {
-    background-color: mediumseagreen;
+    background-color: black;
     grid-area: sidebar;  
 }
 .iteme {
