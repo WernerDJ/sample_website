@@ -13,6 +13,7 @@ box-sizing: border-box;
     	width: 100%; 
     	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
     	background-size: cover; 
+	background-color: black;
     	background-position: center; 
     } 
      
