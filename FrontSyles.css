@@ -50,8 +50,10 @@ a:hover {
 }
 
 .item_navig {
+    display: flex;
     background-color: Black;
     grid-area: nav;  
+    flex-grow: 3
     list-style-type: none;
     text-transform: uppercase;
     font-size: 2em;
