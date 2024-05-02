@@ -13,13 +13,12 @@ box-sizing: border-box;
     	width: 100%; 
     	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
     	background-size: cover; 
-	background-color: black;
     	background-position: center; 
     } 
      
 .top-header > h1 { 
     	color: white; 
-    	background-color: rgba(0,0,0,0.3); 
+    	background-color: black; 
     	padding: 2em 1em; 
     	font-family: sans-serif; 
     } 
@@ -142,7 +141,6 @@ text-align: justify;
 }
 nav {
     list-style-type: none;
-	 background-color: black;
     text-transform: uppercase;
     font-size: 2em;
     margin-top: .75em;
