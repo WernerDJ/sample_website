@@ -9,20 +9,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-.top-header { 
-    	width: 100%; 
-    	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
-    	background-size: cover; 
-    	background-position: center; 
-    } 
-     
-.top-header > h1 { 
-    	color: black; 
-    	padding: 2em 1em; 
-    	font-family: sans-serif;
-    } 
-}
-
 body {
     display: flex;
 	flex-direction: column;
@@ -138,21 +124,6 @@ text-align: justify;
     font-size: 5em;
     line-height: .45em; 
 }
-nav {
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 2em;
-    margin-top: .75em;
-    margin-right: 2em;
-    margin-bottom: .5em;
-    margin-left: 2em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    list-style-type: none;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
-
 li {
     display: inline-block;
     padding-right: 1em;
