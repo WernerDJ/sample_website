@@ -17,10 +17,9 @@ box-sizing: border-box;
     } 
      
 .top-header > h1 { 
-    	color: white; 
+    	color: black; 
     	padding: 2em 1em; 
     	font-family: sans-serif;
-	background-color: black;
     } 
 }
 
