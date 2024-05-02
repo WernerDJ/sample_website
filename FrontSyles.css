@@ -18,6 +18,12 @@ body {
         'sidebar   main   main   main   main'
         'footer footer footer footer footer';
 }
+h1 {
+    font-size: 40px;
+    color: darkorchid;
+    text-align: center;
+    margin-bottom: 0.2em
+}
 .item {
     padding: .1em;
     color: white;
@@ -30,6 +36,7 @@ body {
     background-color: MidnightBlue;
     grid-area: header;  
 }
+
 .itemb {
     background-color: Black;
     grid-area: nav;  
