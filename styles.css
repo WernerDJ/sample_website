@@ -1,0 +1,166 @@
+html, body, abbr, article, aside, audio, blockquote, button,
+canvas, code, div, dl, dt, embed, fieldset, figcaption,
+figure, footer, form, h1, h2, h3, h4, h5, h6, header, iframe,
+img, input, label, legend, li, nav, object, ol, option, p,
+pre, q, section, select, table, tbody, td, tfoot, th, thead,
+tr, ul, video {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.top-header { 
+    	width: 100%; 
+    	background-image: url("C:\Users\Werner\Desktop\WebPageDesign\Images\SeaHorizon.jpg"); 
+    	background-size: cover; 
+    	background-position: center; 
+    } 
+     
+.top-header > h1 { 
+    	color: white; 
+    	background-color: rgba(0,0,0,0.3); 
+    	padding: 2em 1em; 
+    	font-family: sans-serif; 
+    } 
+}
+
+body {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    padding-top: 2em;
+    width: 1200px;
+    background-color: black;
+    margin: 1.5em 2em;
+}
+
+h1 {
+    font-size: 40px;
+    color: darkorchid;
+    text-align: center;
+    margin-bottom: 0.2em
+}
+
+h2 {
+    font-size: 20px;
+    color: darkorchid;
+    text-align: center;
+    margin-top: 0.7em
+    margin-bottom: 0.5em
+}
+
+.blog-container {
+    list-style-type: none;
+    padding: 2em;
+    max-width: 100em;
+    border-radius: .25em;
+    background-color: black;
+}
+
+.blog-item {
+    display: flex;
+    padding: 1em .5em;
+}
+
+.blog-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.blog-image {
+    flex-shrink: 0;
+}
+
+.blog-image img {
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.blog-entry {
+    flex-grow: 1;
+    padding-left: 1em;
+}
+
+.blog-entry h4 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.blog-entry p {
+    color: #666;
+}
+
+div {
+font-family: Verdana, Georgia;
+color: ghostwhite;
+text-align: justify;
+margin-bottom: 0.5em
+}
+a {
+  color: ghostwhite;
+  
+}
+a:hover {
+  color: DeepSkyBlue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+diver {
+font-family: Verdana, Georgia;
+color: ghostwhite;
+text-align: justify;
+}
+.first-paragraph::first-letter { 
+    float: left; 
+    padding-top: .1em; 
+    padding-right: .1em; 
+    padding-bottom: .1em; 
+    color: ghostwhite;
+    font-size: 5em;  
+    line-height: .6em; 
+}
+.pullquote {
+    float: right;
+    width: 50%;
+    margin: 1.25em 0.1em .25em;
+    padding-top: .5em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 1.5em;
+    font-style: italic;
+    color: ghostwhite;
+}
+.pullquote::before {
+    content: "\0201c"; 
+    float: left; 
+    padding: .1em .2em .4em 0;
+    font-size: 5em;
+    line-height: .45em; 
+}
+nav {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: .75em;
+    margin-right: 2em;
+    margin-bottom: .5em;
+    margin-left: 2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid white;
+
+}
+
+li {
+    display: inline-block;
+    padding-right: 1em;
+    color: ghostwhite;
+}
+}
+li:first-child {
+    padding-left: 1em;
+}
