@@ -47,14 +47,16 @@ a:hover {
     	background-size: cover; 
     	background-position: center; 
 }
-
+.second-row 
+{ 
+ flex-grow: 1; border: none; margin: 0; padding: 0; 
+}
 .item_main {
     background-color: MidnightBlue;
     grid-area: main;  
     justify-content: stretch;
     justify-items: start|end|center|stretch;
     align-content: stretch;
-    flex-grow: 1; border: none; margin: 0; padding: 0;
 }
 .item_side {
     background-color: black;
