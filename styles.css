@@ -7,6 +7,7 @@ tr, ul, video {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+    background-color: black;
 }
 
 .top-header { 
@@ -97,7 +98,7 @@ text-align: justify;
 margin-bottom: 0.5em
 }
 a {
-  color: pink;
+  color: darkorchid;
   
 }
 a:hover {
