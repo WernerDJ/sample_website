@@ -45,7 +45,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: end;
     flex-grow: 1;
     max-width: 960px;
     font-family: Optima, Calibri, sans-serif;
