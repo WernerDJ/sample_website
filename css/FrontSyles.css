@@ -11,34 +11,11 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 25px 1fr 50px;
+    grid-template-rows: 50px 1fr 50px;
     grid-template-areas: 
         'header header header header header'
         'sidebar   main   main   main   main'
         'sidebar   main   main   main   main';
-}
-.top-header { 
-    	width: 100%; 
-    	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
-    	background-size: cover; 
-    	background-position: center; 
-    } 
-     
-.top-header > h1 { 
-    	color: white; 
-    	padding: 2em 1em; 
-    	font-family: sans-serif;
-    } 
-.item_heather {
-    background-color: MidnightBlue;
-    grid-area: header;  
-     background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
-    	background-size: cover; 
-    	background-position: center; 
-}
-.second-row 
-{ 
- flex-grow: 1; border: none; margin: 0; padding: 0; 
 }
 h1 {
     font-size: 40px;
@@ -55,7 +32,25 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
-
+.item {
+    padding: .1em;
+    color: white;
+    font-family: Didot, serif;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, 0.2);
+}
+.item_heather {
+    background-color: MidnightBlue;
+    grid-area: header;  
+     background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
+    	background-size: cover; 
+    	background-position: center; 
+}
+.second-row 
+{ 
+ flex-grow: 1; border: none; margin: 0; padding: 0; 
+}
 .item_main {
     background-color: MidnightBlue;
     grid-area: main;  
@@ -68,16 +63,19 @@ a:hover {
     grid-area: sidebar;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 2em;
     list-style-type: none;
     border-bottom: 1px solid white;
 }
-.item {
-    padding: .1em;
-    color: white;
-    font-family: Didot, serif;
-    font-size: 2.5em;
-    text-align: center;
-    text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, 0.2);
-}
-
+.top-header { 
+    	width: 100%; 
+    	background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
+    	background-size: cover; 
+    	background-position: center; 
+    } 
+     
+.top-header > h1 { 
+    	color: white; 
+    	padding: 2em 1em; 
+    	font-family: sans-serif;
+    } 
