@@ -69,6 +69,7 @@ a:hover {
 }
 .item_foot {
     background-color: #FDC065;
+    color: PaleTurquoise;
     grid-area: footer;  
 }
 .top-header { 
