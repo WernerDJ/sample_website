@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 75px 1fr 50px;
+    grid-template-rows: 25px 1fr 50px;
     grid-template-areas: 
         'header header header header header'
         'sidebar   main   main   main   main'
@@ -68,7 +68,7 @@ a:hover {
     grid-area: sidebar;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.3em;
     list-style-type: none;
     border-bottom: 1px solid white;
 }
