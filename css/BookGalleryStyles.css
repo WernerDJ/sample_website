@@ -13,15 +13,13 @@ body {
     font-family: Calibri, sans-serif;
     background-color: #221900;
     color: #86bf60;
-    padding-top: 3.5em;
+    padding-top: 1.5em;
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 0.2em 0;
-    
+    padding: 0.4em 0;
     width: 100%;
     background-color: #213e69;
 }
