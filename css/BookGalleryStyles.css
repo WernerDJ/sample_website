@@ -19,9 +19,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*
+
     padding: 1em 0;
-        */
+    
     width: 100%;
     background-color: #213e69;
 }
