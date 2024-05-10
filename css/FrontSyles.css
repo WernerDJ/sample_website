@@ -17,7 +17,7 @@ body {
         'sidebar   main   main   main   main'
         'sidebar   main   main   main   main';
 }
-.item_heather {
+item_heather {
     background-color: MidnightBlue;
     grid-area: header;  
      background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
