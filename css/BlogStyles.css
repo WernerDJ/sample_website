@@ -33,7 +33,7 @@ h2 {
     margin-top: 0.7em
     margin-bottom: 0.5em
 }
-
+		
 .blog-container {
     list-style-type: none;
     padding: 2em;
@@ -67,7 +67,7 @@ h2 {
 }
 
 .blog-entry h4 {
-    color: #333;
+    color: #F1C232;
     font-size: 1.5em;
 }
 
@@ -82,7 +82,7 @@ text-align: justify;
 margin-bottom: 0.5em
 }
 a {
-  color: darkorchid;
+  color: #F1C232;
   
 }
 a:hover {
