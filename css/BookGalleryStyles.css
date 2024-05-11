@@ -23,9 +23,6 @@ header {
     margin-bottom: 3rem;
 }
 main {
-    /*
-    padding-top:2em;
-    */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,11 +37,13 @@ h1 {
     font-size: 2em;
     font-weight: 400;
 }
+/*
 .current-page {
     padding: .75em;
     background-color: #ecd078;
     color: #221900;
 }
+*/
 a {
     color: darkorchid;
 }
