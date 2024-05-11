@@ -52,18 +52,4 @@ a:hover {
     color: DeepSkyBlue;
     text-decoration: underline;
 }
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-transform: uppercase;
-    background-color: #542437;
-}
-footer p {
-    padding: 0 1.5em;
-}
 
