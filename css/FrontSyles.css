@@ -46,11 +46,11 @@ h1 {
     margin-bottom: 0.2em
 }
 a {
-  color: #CF57E3;
+  color: Coral;
   
 }
 a:hover {
-  color: DeepSkyBlue;
+  color: #CF57E3;
   background-color: transparent;
   text-decoration: underline;
 }
