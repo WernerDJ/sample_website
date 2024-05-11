@@ -79,7 +79,7 @@ margin-bottom: 0.5em
 }
 a {
   color:  #F1C232;
-  
+  text-decoration: none;
 }
 a:hover {
   color: DeepSkyBlue;
