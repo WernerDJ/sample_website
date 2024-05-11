@@ -44,4 +44,8 @@ a:hover {
     color: DeepSkyBlue;
     text-decoration: underline;
 }
-
+.caption-title {
+    font-family:Cambria;
+    font-size: 2em;
+    font-weight: 400;
+}
