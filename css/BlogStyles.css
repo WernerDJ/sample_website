@@ -46,11 +46,7 @@ h2 {
     display: flex;
     padding: 1em .5em;
 }
-/*
-.blog-item:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-}
-*/
+
 .blog-image {
     flex-shrink: 0;
 }
@@ -67,7 +63,7 @@ h2 {
 }
 
 .blog-entry h4 {
-    color: #F1C232;
+    color: Coral;
     font-size: 1.5em;
 }
 
