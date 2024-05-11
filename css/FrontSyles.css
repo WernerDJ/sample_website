@@ -41,12 +41,12 @@ body {
     } 
 h1 {
     font-size: 40px;
-    color:#FDC065;
+    color:#F1C232;
     text-align: center;
     margin-bottom: 0.2em
 }
 a {
-  color: darkorchid;
+  color: #F1C232;
   
 }
 a:hover {
