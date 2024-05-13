@@ -20,8 +20,10 @@ body {
 .item_heather {
     background-color: MidnightBlue;
     grid-area: header;  
+ /*
      background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
-    	background-size: cover; 
+  */
+     background-size: cover; 
     	background-position: center; 
 }
 .second-row 
