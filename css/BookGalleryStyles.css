@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     font-family: Calibri, sans-serif;
     background-color: #221900;
-    color: #FFD966;
+    color: LightCyan;
     padding-top: 0.5em; 
 }
 header {
@@ -47,7 +47,7 @@ a:hover {
 }
 .caption-title {
     font-family:Cambria;
-    color: #F1C232;
+    color: LightSkyBlue;
     font-size: 1.2em;
     font-weight: 200;
 }
