@@ -18,9 +18,9 @@ body {
         'sidebar   main   main   main   main';
 }
 .item_heather {
+    grid-area: header; 
+    background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/black-silk.jpg"); 
     background-color: black;
-    grid-area: header;  
-     background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/black-silk.jpg"); 
     	background-size: cover; 
     	background-position: center; 
     border-bottom: 3px solid MidnightBlue;
