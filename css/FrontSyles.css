@@ -21,7 +21,7 @@ body {
     background-color: black;
     grid-area: header;  
      background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/black-silk.jpg"); 
-     background-size: cover; 
+    	background-size: cover; 
     	background-position: center; 
 }
 .second-row 
