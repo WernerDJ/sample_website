@@ -14,10 +14,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
     padding-top: 2em;
-    width: 1000px;
     background-color: black;
-	/*
-    margin: 1.5em 2em;  */
 }
 header {
     display: flex;
