@@ -40,6 +40,7 @@ h2 {
     max-width: 100em;
     border-radius: .25em;
     background-color: black;
+    border: 5px double white;
 }
 
 .blog-item {
