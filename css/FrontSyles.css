@@ -44,11 +44,9 @@ h1 {
     font-size: 40px;
     color:Coral;
     text-align: center;
-    /* margin-bottom: 0.2em */
 }
 a {
   color: Coral;
-  
 }
 a:hover {
   color: DeepSkyBlue;
