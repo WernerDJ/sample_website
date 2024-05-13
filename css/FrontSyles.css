@@ -4,7 +4,6 @@ body {
 * {
     margin: 0;
     padding: 0;
- /*   box-sizing: border-box;   */
     font-size: 100%;
 }
 .container {
@@ -23,7 +22,7 @@ body {
      background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/black-silk.jpg"); 
     	background-size: cover; 
     	background-position: center; 
-    border-bottom: 6px solid LightSkyBlue
+    border-bottom: 3px solid LightSkyBlue
 }
 .second-row 
 { 
@@ -60,7 +59,6 @@ a:hover {
     background-color: MidnightBlue;
     grid-area: main;  
     justify-content: stretch;
-    justify-items: start|end|center|stretch;
     align-content: stretch;
 }
 .item_side {
