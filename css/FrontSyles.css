@@ -20,9 +20,7 @@ body {
 .item_heather {
     background-color: #F1C232
     grid-area: header;  
- /*
-     background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/SeaHorizon.jpg"); 
-  */
+     background-image: url("https://raw.githubusercontent.com/WernerDJ/sample_website/main/Images/black-silk.jpg"); 
      background-size: cover; 
     	background-position: center; 
 }
