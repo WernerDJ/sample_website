@@ -45,7 +45,7 @@ h2 {
 .blog-item {
     display: flex;
     padding: 1em .5em;
-    border: 3px double white;
+    border: 3px double Coral;
 }
 
 .blog-image {
