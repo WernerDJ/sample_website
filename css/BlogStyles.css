@@ -40,12 +40,12 @@ h2 {
     max-width: 100em;
     border-radius: .25em;
     background-color: black;
-    border: 5px double white;
 }
 
 .blog-item {
     display: flex;
     padding: 1em .5em;
+    border: 3px double white;
 }
 
 .blog-image {
