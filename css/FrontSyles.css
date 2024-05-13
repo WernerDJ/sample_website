@@ -1,5 +1,6 @@
 body {
  display: grid;
+ border:none;
 }
 * {
     margin: 0;
@@ -60,6 +61,7 @@ a:hover {
     grid-area: main;  
     justify-content: stretch;
     align-content: stretch;
+    bordern:none;
 }
 .item_side {
     background-color: black;
