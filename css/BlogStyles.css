@@ -19,7 +19,16 @@ body {
 	/*
     margin: 1.5em 2em;  */
 }
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em 0;
+    width: 100%;
+    color: Coral;
+    background-color: #213e69;
+    margin-bottom: 3rem;
+}
 h1 {
     font-size: 40px;
     color:  #F1C232;
