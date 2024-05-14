@@ -76,6 +76,6 @@ like commenting a post, require JavaScript.
 </noscript>
 </body>
   <script>
-document.write("Last modified: " + document.lastModified);
+document.body.innerHTML = document.body.innerHTML + ("Last modified: " + document.lastModified);
 </script>
 </html>
