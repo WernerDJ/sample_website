@@ -45,6 +45,10 @@ a:hover {
     color: DeepSkyBlue;
     text-decoration: underline;
 }
+.thumbnail {
+width: 100px;
+height: auto;
+}
 .caption-title {
     font-family:Cambria;
     color: LightSkyBlue;
