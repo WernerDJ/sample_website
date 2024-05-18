@@ -8,12 +8,8 @@ image.addEventListener('contextmenu', function(e) {
 e.preventDefault();
 // Toggle the full-size class on the image
 //image.classList.toggle('width: 100px');
-  /*
   x = document.getElementsByTagName("img")[11];
        x.height = 50%;
        x.width = 50%;
-       */
-       e.height = 50%;
-       e.width = 50%;
 });
 }
