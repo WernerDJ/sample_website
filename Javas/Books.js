@@ -1,4 +1,6 @@
 // Get all the img elements
+
+/*
 const images = document.getElementsByTagName('img');
 // Loop through the images
 for (const image of images) {
@@ -13,3 +15,9 @@ e.preventDefault();
        x.width = 50%;
 });
 }
+*/
+    function func3() {
+       x = document.getElementsByTagName("img")[11];
+       x.height = 50%;
+       x.width = 50%;
+    }
