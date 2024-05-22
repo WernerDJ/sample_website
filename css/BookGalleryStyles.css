@@ -21,7 +21,14 @@ header {
     width: 100%;
     color: Coral;
     background-color: #213e69;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+comment {
+    justify-content: center;
+    font-family:Cambria;
+    color: LightSkyBlue;
+    font-size: 1.2em;
+     margin-bottom: 2rem;
 }
 main {
     display: flex;
