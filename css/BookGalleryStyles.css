@@ -38,7 +38,7 @@ main {
     flex-grow: 1;
     max-width: 960px;
     font-family: Optima, Calibri, sans-serif;
-    row-gap: 1em;
+    row-gap: 1.5em;
     padding-bottom: 3.5em;
 }
 h1 {
