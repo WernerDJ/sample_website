@@ -52,6 +52,8 @@ a {
 a:hover {
     color: DeepSkyBlue;
     text-decoration: underline;
+    width: 220px;
+    height: 270px;
 }
 .thumbnail {
 width: 120px;
