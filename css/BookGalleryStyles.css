@@ -27,8 +27,6 @@ comment {
     justify-content: center;
     font-family:Cambria;
     color: LightSkyBlue;
-    font-size: 1.2em;
-     margin-bottom: 2rem;
 }
 main {
     display: flex;
@@ -52,13 +50,17 @@ a {
 a:hover {
     color: DeepSkyBlue;
     text-decoration: underline;
-    width: 220px;
-    height: 270px;
+
 }
 .thumbnail {
 width: 120px;
 height: 170px;
 }
+.tumbnail:hover child {
+    width: 220px;
+    height: 270px;
+}
+
 .caption-title {
     font-family:Cambria;
     color: LightSkyBlue;
