@@ -1,0 +1,103 @@
+<?php // blogheader.php
+require_once '../php/header.php';
+
+// Set the blog post title directly in the code
+$blogPostTitle = "Blog Post Title as it is written in database";
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $alias = $_POST['alias'];
+    $comment = $_POST['comment'];
+    $commentDate = date("Y-m-d H:i:s");
+    $publish_it = 1; // Automatically set to published
+
+    // Insert the comment into the database
+    $sql = "INSERT INTO comments (BlogPostTitle, email, Alias, Comment, CommentDate, publish_it) VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sssssi", $blogPostTitle, $email, $alias, $comment, $commentDate, $publish_it);
+
+    if ($stmt->execute()) {
+        echo "Comment added successfully!";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+}
+
+// Fetch the blog post from the database
+$sql = "SELECT * FROM blogpost WHERE BlogPostTitle = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $blogPostTitle);
+$stmt->execute();
+$blogPost = $stmt->get_result()->fetch_assoc();
+
+// Check if the blog post exists
+if (!$blogPost) {
+    echo "Blog post not found.";
+    exit();
+}
+
+// Fetch comments for the blog post (only published comments)
+$sql = "SELECT * FROM comments WHERE BlogPostTitle = ? AND publish_it = 1";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $blogPostTitle);
+$stmt->execute();
+$comments = $stmt->get_result();
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/PostStyl.css">
+    <title><?php echo htmlspecialchars($blogPost['BlogPostTitle']); ?></title>
+</head>
+<body>
+
+<h1>Blog Post Title</h1>
+
+<div>
+    <p class="first-paragraph">
+Lorem ipsum odor amet, consectetuer adipiscing elit. Libero lobortis viverra massa facilisis pellentesque. Gravida molestie euismod facilisi placerat pellentesque ultricies maximus netus. Taciti vulputate venenatis id hendrerit pharetra nostra torquent adipiscing. Nullam elit viverra pellentesque venenatis sed mollis tincidunt. Gravida per eget dolor nostra est augue. Auctor sapien condimentum ornare metus turpis non vehicula efficitur. Suspendisse netus convallis facilisi semper malesuada inceptos eu quisque hac. Ridiculus sed interdum sed sodales, nibh primis elit cras?</p>
+<p>
+Elit viverra penatibus sed habitasse commodo faucibus urna vitae. Per urna eu magna augue elit feugiat sodales luctus faucibus. Euismod erat maximus cursus penatibus vestibulum viverra phasellus ex. Hac suscipit augue ac nulla dapibus posuere dolor aptent. Et urna quam sagittis varius maximus. Faucibus habitasse elementum placerat rutrum suspendisse. Et nulla rutrum mollis habitant lectus ullamcorper purus proin laoreet.
+</p>
+</div>
+
+<div class="comment-form">
+    <h2>Leave a Comment</h2>
+    <form action="" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="alias">Alias:</label><br>
+        <input type="text" id="alias" name="alias" required><br><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="comments-section">
+    <h2>Comments</h2>
+    <?php if ($comments->num_rows > 0): ?>
+        <?php while ($comment = $comments->fetch_assoc()): ?>
+            <div class="comment-container">
+                <div class="comment-info">
+                    <strong><?php echo htmlspecialchars($comment['email']); ?></strong><br>
+                    <em><?php echo htmlspecialchars($comment['CommentDate']); ?></em>
+                </div>
+                <div class="comment-box">
+                    <div class="comment-text"><?php echo htmlspecialchars($comment['Comment']); ?></div>
+                </div>
+            </div>
+        <?php endwhile; ?>
+    <?php else: ?>
+        <p>No comments yet. Be the first to comment!</p>
+    <?php endif; ?>
+</div>
+</body>
+</html>
+<?php
+// Close the connection
+$conn->close();
+?>
