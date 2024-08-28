@@ -1,10 +1,3 @@
-<?php //blog post
-require_once '../php/contact.php';
-// Set the blog post title directly in the code
-$blogPostTitle = "Blog Post Title as it is written in database";
-require_once '../php/blogdata.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,4 +30,8 @@ Elit viverra penatibus sed habitasse commodo faucibus urna vitae. Per urna eu ma
     </form>
 </div>
 <?php
+require_once '../php/contact.php';
+// Set the blog post title directly in the code
+$blogPostTitle = "Blog Post Title as it is written in database";
+require_once '../php/blogdata.php';
 include '../php/comments.html.php';
