@@ -36,27 +36,5 @@ Elit viverra penatibus sed habitasse commodo faucibus urna vitae. Per urna eu ma
         <input type="submit" value="Submit">
     </form>
 </div>
-<div class="comments-section">
-    <h2>Comments</h2>
-    <?php if ($comments->num_rows > 0): ?>
-        <?php while ($comment = $comments->fetch_assoc()): ?>
-            <div class="comment-container">
-                <div class="comment-info">
-                    <strong><?php echo htmlspecialchars($comment['email']); ?></strong><br>
-                    <em><?php echo htmlspecialchars($comment['CommentDate']); ?></em>
-                </div>
-                <div class="comment-box">
-                    <div class="comment-text"><?php echo htmlspecialchars($comment['Comment']); ?></div>
-                </div>
-            </div>
-        <?php endwhile; ?>
-    <?php else: ?>
-        <p>No comments yet. Be the first to comment!</p>
-    <?php endif; ?>
-</div>
-</body>
-</html>
 <?php
-// Close the connection
-$conn->close();
-?>
+include '../php/comments.html.php';
