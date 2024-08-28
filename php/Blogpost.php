@@ -1,8 +1,8 @@
 <?php
-require_once '../php/contact.php';
+require_once __DIR__.'/../php/contact.php';
 // Set the blog post title directly in the code
 $blogPostTitle = "Blog Post Title as it is written in database";
-require_once '../php/blogdata.php';
+require_once __DIR__.'/../php/blogdata.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,4 +36,4 @@ Elit viverra penatibus sed habitasse commodo faucibus urna vitae. Per urna eu ma
     </form>
 </div>
 <?php
-include '../php/comments.html.php';
+include __DIR__.'/../php/comments.html.php';
