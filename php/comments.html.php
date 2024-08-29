@@ -1,3 +1,50 @@
+<style>
+    .comments-section {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #333;
+    border-radius: 0.25em;
+    color: ghostwhite;
+}
+
+.comment-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #555;
+    border-radius: 0.25em;
+    background-color: #444;
+}
+
+.comment-info {
+    width: 20%;
+    padding-right: 1em;
+    font-size: 0.9em;
+    color: LightCyan;
+    font-style: italic;
+    text-align: left;
+}
+
+.comment-box {
+    width: 80%;
+}
+
+.comment-text {
+    width: 100%;
+    height: 5em;
+    padding: 0.5em;
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    background-color: #222;
+    color: ghostwhite;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: none;
+    overflow: auto;
+}
+</style>
 <div class="comment-form">
     <h2>Leave a Comment</h2>
     <form action="" method="post">
