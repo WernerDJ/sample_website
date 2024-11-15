@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 
 // Connect to the database
 $servername = "localhost";
-$username = "admin";
-$password = "Fib49#7778742049";
+$username = "user";
+$password = "password";
 $dbname = "MultiLang";
 
 // Create connection
