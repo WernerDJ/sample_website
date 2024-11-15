@@ -10,16 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.wp.pl';
+        $mail->Host = 'smtp adress';
         $mail->SMTPAuth = true;
-        $mail->Username = 'juan_d@wp.pl';
-        $mail->Password = 'Pi#31415926';
+        $mail->Username = 'sender email';
+        $mail->Password = 'sender email password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         // Recipients
-        $mail->setFrom('juan_d@wp.pl', 'Contact Form');
-        $mail->addAddress('franz.solon@gmail.com');
+        $mail->setFrom('sender email', 'Contact Form');
+        $mail->addAddress('recipient email');
 
         // Content
         $mail->isHTML(true);
