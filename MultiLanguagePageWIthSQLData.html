@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="pageTitle">Werb Page Title</title>
+    <style>
+        /* CSS Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr 6fr;
+            grid-template-areas: 
+                'header header header header header'
+                'sidebar main main main main';
+        }
+
+        .item_heather {
+            grid-area: header; 
+            background-color: black;
+            background-size: cover; 
+            background-image: url("../Images/Blue.jpeg"); 
+            background-position: center; 
+            border-bottom: 3px solid MidnightBlue;
+            position: relative;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: Coral;
+            margin: 0;
+            z-index: 1; 
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 25%;
+            left: 1%;
+            font-size: 1em;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .flag {
+            width: 30px;
+            height: 20px;
+            margin-right: 0.5em;
+            cursor: pointer;
+        }
+
+        .lang-label {
+            color: Coral;
+            font-size: 1em;
+            margin-left: 0.5em;
+        }
+
+        .item_main {
+            background-color: MidnightBlue;
+            grid-area: main;
+            position: relative;
+        }
+
+        .item_side {
+            background-color: black;
+            background-image: url("../Images/Blue2.jpeg"); 
+            grid-area: sidebar;
+            list-style-type: none;
+            padding: 1em;
+        }
+
+        .item {
+            padding: .1em;
+            color: white;
+            font-family: Didot, serif;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            color: Coral;
+        }
+
+        a:hover {
+            color: DeepSkyBlue;
+            text-decoration: underline;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 100px); 
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="item item_heather">
+        <h1 id="headerTitle">Transcending Infinity</h1>
+        <div class="language-selector">
+            <img src="./Images/flags/en.png" class="flag" alt="English" onclick="changeLanguage('en')" id="flag-en">
+            <img src="./Images/flags/es.png" class="flag" alt="Español" onclick="changeLanguage('es')" id="flag-es">
+            <img src="./Images/flags/pl.png" class="flag" alt="Polski" onclick="changeLanguage('pl')" id="flag-pl">
+            <span class="lang-label" id="langLabel">English</span>
+        </div>
+    </div>
+    
+    <div class="item item_side">
+        <p id="blogPageLink"><a href="./pages/BlogPage.php" target="iframe_a">Blog Page</a></p>
+        <p id="booksLink"><a href="./pages/BookGallery.php" target="iframe_a">Books</a></p>
+        <p id="papersLink"><a href="./pages/Papers.php" target="iframe_a">Papers</a></p>
+        <p id="relevantLinks"><a href="./pages/Relevant_links.php" target="iframe_a">Relevant Links</a></p>
+        <p id="aboutMeLink"><a href="./pages/AboutMe.html" target="iframe_a">About Me</a></p>
+        <p id="contactMeLink"><a href="./pages/contact_form.php?lang=en" target="iframe_a">Contact Me</a></p>
+    </div>
+    
+    <div class="item item_main">
+        <iframe id="contentFrame" src="./pages/BlogPage.php?lang=en" name="iframe_a"></iframe>
+    </div>
+</div>
+
+<script>
+    const translations = {
+        en: {
+            blogPage: "Blog Page",
+            books: "Books",
+            papers: "Papers",
+            relevantLinks: "Relevant Links",
+            aboutMe: "About Me",
+            contactMe: "Contact Me",
+            title: "Web Page"
+        },
+        es: {
+            blogPage: "Páginas del Blog",
+            books: "Libros",
+            papers: "Artículos",
+            relevantLinks: "Enlaces relevantes",
+            aboutMe: "Acerca de mí",
+            contactMe: "Contáctame",
+            title: "Página web"
+        },
+        pl: {
+            blogPage: "Strony bloga",
+            books: "Książki",
+            papers: "Artykuły",
+            relevantLinks: "Odpowiednie linki",
+            aboutMe: "O mnie",
+            contactMe: "Skontaktuj się",
+            title: "Strona Internetowa"
+        }
+    };
+
+    function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+    }
+
+    function getCookie(name) {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            cookie = cookie.trim();
+            if (cookie.indexOf(name + '=') === 0) return cookie.substring(name.length + 1);
+        }
+        return '';
+    }
+
+    function changeLanguage(lang) {
+        document.getElementById('blogPageLink').innerHTML = `<a href="./pages/BlogPage.php?lang=${lang}" target="iframe_a">${translations[lang].blogPage}</a>`;
+        document.getElementById('booksLink').innerHTML = `<a href="./pages/BookGallery.php?lang=${lang}" target="iframe_a">${translations[lang].books}</a>`;
+        document.getElementById('papersLink').innerHTML = `<a href="./pages/Papers.php?lang=${lang}" target="iframe_a">${translations[lang].papers}</a>`;
+        document.getElementById('relevantLinks').innerHTML = `<a href="./pages/Relevant_links.php?lang=${lang}" target="iframe_a">${translations[lang].relevantLinks}</a>`;
+        document.getElementById('aboutMeLink').innerHTML = `<a href="./pages/AboutMe.html?lang=${lang}" target="iframe_a">${translations[lang].aboutMe}</a>`;
+        document.getElementById('contactMeLink').innerHTML = `<a href="./pages/contact_form.php?lang=${lang}" target="iframe_a">${translations[lang].contactMe}</a>`;
+
+        document.getElementById('contentFrame').src = `./pages/BlogPage.php?lang=${lang}`;
+        document.getElementById('pageTitle').textContent = translations[lang].title;
+        document.getElementById('headerTitle').textContent = translations[lang].title;
+
+        const langLabels = { en: "English", es: "Español", pl: "Polski" };
+        document.getElementById('langLabel').textContent = langLabels[lang];
+
+        setCookie('selectedLanguage', lang, 30);
+    }
+
+    window.onload = function() {
+        const savedLang = getCookie('selectedLanguage') || 'en';
+        changeLanguage(savedLang);
+    }
+</script>
+
+</body>
+</html>
