@@ -10,6 +10,7 @@ sudo chmod 750 (the new path)/send_email.php
 sudo chown ubuntu:www-data (the new path)/send_email.php
 The email sender wrapper (contact will nearly the same):
 
+send_email_wrapper.php
 <?php
 // Include the secure send_email.php script from outside the web directory
 require '(the new path)/send_email.php';
