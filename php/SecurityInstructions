@@ -1,0 +1,15 @@
+The files contact.php and send_email.php should be substituted by 
+contact_wrapper.php and send_email_wrapper.php in the php folder
+All references to contact.php and send_email.php should be rewritten to 
+the wrapper files and the non wrapper files should be written in a folder
+out of the web page folders
+If linux is being used special permissions might be necessary to be
+confered to both files:
+sudo chmod 750 (the new path)/send_email.php
+sudo chown ubuntu:www-data (the new path)/send_email.php
+The email sender wrapper (contact will nearly the same):
+
+<?php
+// Include the secure send_email.php script from outside the web directory
+require '(the new path)/send_email.php';
+?>
